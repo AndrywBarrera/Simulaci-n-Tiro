@@ -161,6 +161,6 @@ Vy_nuevo = −Vy · 0.6    ← inversión + atenuación del 40 %
 
 <div align="center">
 
-*Hecho con 💙 en C# · UPTC Tunja*
+*Hecho con 💙 en C# · UPTC Sogamoso*
 
 </div>
