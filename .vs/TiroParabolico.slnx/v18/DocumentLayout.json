@@ -1,0 +1,167 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\tiroparabolico\\processform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\processform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\tiroparabolico\\processform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\processform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|c:\\andryw\\proyectos\\codesvbcomunity\\tiroparabolico\\tiroparabolico\\tiroparabolico\\backform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\backform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\tiroparabolico\\processform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\processform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\tiroparabolico\\graphform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\graphform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\tiroparabolico\\graphform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\graphform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\tiroparabolico\\graphform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\graphform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\tiroparabolico\\backform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\backform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\tiroparabolico\\backform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\backform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GraphForm.cs",
+              "DocumentMoniker": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\TiroParabolico\\GraphForm.cs",
+              "RelativeDocumentMoniker": "TiroParabolico\\GraphForm.cs",
+              "ToolTip": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\TiroParabolico\\GraphForm.cs",
+              "RelativeToolTip": "TiroParabolico\\GraphForm.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwA8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T19:11:51.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BackForm.Designer.cs",
+              "DocumentMoniker": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\TiroParabolico\\BackForm.Designer.cs",
+              "RelativeDocumentMoniker": "TiroParabolico\\BackForm.Designer.cs",
+              "ToolTip": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\TiroParabolico\\BackForm.Designer.cs",
+              "RelativeToolTip": "TiroParabolico\\BackForm.Designer.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAkwIsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T19:11:42.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BackForm.cs",
+              "DocumentMoniker": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\TiroParabolico\\BackForm.cs",
+              "RelativeDocumentMoniker": "TiroParabolico\\BackForm.cs",
+              "ToolTip": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\TiroParabolico\\BackForm.cs",
+              "RelativeToolTip": "TiroParabolico\\BackForm.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAiwH0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T19:11:31.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BackForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\TiroParabolico\\BackForm.cs",
+              "RelativeDocumentMoniker": "TiroParabolico\\BackForm.cs",
+              "ToolTip": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\TiroParabolico\\BackForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TiroParabolico\\BackForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T20:51:11.395Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProcessForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\TiroParabolico\\ProcessForm.cs",
+              "RelativeDocumentMoniker": "TiroParabolico\\ProcessForm.cs",
+              "ToolTip": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\TiroParabolico\\ProcessForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TiroParabolico\\ProcessForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T20:38:25.668Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProcessForm.cs",
+              "DocumentMoniker": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\TiroParabolico\\ProcessForm.cs",
+              "RelativeDocumentMoniker": "TiroParabolico\\ProcessForm.cs",
+              "ToolTip": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\TiroParabolico\\ProcessForm.cs",
+              "RelativeToolTip": "TiroParabolico\\ProcessForm.cs",
+              "ViewState": "AgIAADsCAAAAAAAAAAAIwEECAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T20:38:23.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProcessForm.Designer.cs",
+              "DocumentMoniker": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\TiroParabolico\\ProcessForm.Designer.cs",
+              "RelativeDocumentMoniker": "TiroParabolico\\ProcessForm.Designer.cs",
+              "ToolTip": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\TiroParabolico\\ProcessForm.Designer.cs",
+              "RelativeToolTip": "TiroParabolico\\ProcessForm.Designer.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T20:38:21.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GraphForm.Designer.cs",
+              "DocumentMoniker": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\TiroParabolico\\GraphForm.Designer.cs",
+              "RelativeDocumentMoniker": "TiroParabolico\\GraphForm.Designer.cs",
+              "ToolTip": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\TiroParabolico\\GraphForm.Designer.cs",
+              "RelativeToolTip": "TiroParabolico\\GraphForm.Designer.cs",
+              "ViewState": "AgIAAE0BAAAAAAAAAAAcwFQBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T20:36:11.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GraphForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\TiroParabolico\\GraphForm.cs",
+              "RelativeDocumentMoniker": "TiroParabolico\\GraphForm.cs",
+              "ToolTip": "C:\\Andryw\\Proyectos\\CodesVBComunity\\TiroParabolico\\TiroParabolico\\TiroParabolico\\GraphForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TiroParabolico\\GraphForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T20:36:06.466Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

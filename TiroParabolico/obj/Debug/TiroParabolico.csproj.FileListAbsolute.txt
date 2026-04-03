@@ -1,0 +1,11 @@
+C:\Andryw\Proyectos\CodesVBComunity\TiroParabolico\TiroParabolico\TiroParabolico\obj\Debug\TiroParabolico.csproj.AssemblyReference.cache
+C:\Andryw\Proyectos\CodesVBComunity\TiroParabolico\TiroParabolico\TiroParabolico\obj\Debug\TiroParabolico.BackForm.resources
+C:\Andryw\Proyectos\CodesVBComunity\TiroParabolico\TiroParabolico\TiroParabolico\obj\Debug\TiroParabolico.ProcessForm.resources
+C:\Andryw\Proyectos\CodesVBComunity\TiroParabolico\TiroParabolico\TiroParabolico\obj\Debug\TiroParabolico.Properties.Resources.resources
+C:\Andryw\Proyectos\CodesVBComunity\TiroParabolico\TiroParabolico\TiroParabolico\obj\Debug\TiroParabolico.csproj.GenerateResource.cache
+C:\Andryw\Proyectos\CodesVBComunity\TiroParabolico\TiroParabolico\TiroParabolico\obj\Debug\TiroParabolico.csproj.CoreCompileInputs.cache
+C:\Andryw\Proyectos\CodesVBComunity\TiroParabolico\TiroParabolico\TiroParabolico\bin\Debug\TiroParabolico.exe.config
+C:\Andryw\Proyectos\CodesVBComunity\TiroParabolico\TiroParabolico\TiroParabolico\bin\Debug\TiroParabolico.exe
+C:\Andryw\Proyectos\CodesVBComunity\TiroParabolico\TiroParabolico\TiroParabolico\bin\Debug\TiroParabolico.pdb
+C:\Andryw\Proyectos\CodesVBComunity\TiroParabolico\TiroParabolico\TiroParabolico\obj\Debug\TiroParabolico.exe
+C:\Andryw\Proyectos\CodesVBComunity\TiroParabolico\TiroParabolico\TiroParabolico\obj\Debug\TiroParabolico.pdb
