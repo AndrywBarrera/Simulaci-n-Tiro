@@ -172,7 +172,7 @@ namespace TiroParabolico
             initialTejoY = picTejoF.Location.Y;
 
             // Objetivo ESTÁTICO; obstáculo aleatorio cada partida
-            PosicionarObstaculoAleatorio();
+            PosicionarObjetivoAleatorio();
 
             panelCalculos.Visible = false;   // Panel oculto al arrancar
 
@@ -209,12 +209,13 @@ namespace TiroParabolico
         //  POSICIONAMIENTO ALEATORIO DEL OBSTÁCULO
         // ══════════════════════════════════════════════════════════════
 
-        private void PosicionarObstaculoAleatorio()
+        private void PosicionarObjetivoAleatorio()
         {
             Random rnd = new Random();
-            picObstaculoF.Location = new Point(
-                rnd.Next(250, 441),   // X ∈ [250, 440]
-                rnd.Next(50, 251)    // Y ∈ [50, 250]
+            // Objetivo horizontal: X entre 300 y 550, Y entre 150 y 350
+            picObjetivoF.Location = new Point(
+                rnd.Next(400, 651),
+                rnd.Next(150, 351)
             );
         }
 
@@ -500,11 +501,14 @@ namespace TiroParabolico
                 histVy[histVy.Count - 2] >= 0 &&
                 histVy[histVy.Count - 1] < 0)
             {
+                // En la altura máxima Vy es ≈ 0, Vx se mantiene constante
                 lblVelMaxVx.Text = $"Vx: {vx * SCALE:F2} m/s";
-                lblVelMaxVy.Text = $"Vy: {vy * SCALE:F2} m/s";
-                lblVelMaxMag.Text = $"|V|: {vmag * SCALE:F2} m/s";
-                lblVelMaxAng.Text = $"θ: {ang:F1}°";
+                lblVelMaxVy.Text = $"Vy: 0.00 m/s";
+                lblVelMaxMag.Text = $"|V|: {Math.Abs(vx * SCALE):F2} m/s";
+                lblVelMaxAng.Text = $"θ: 0.0°";
             }
+
+            lblEstado.Text = $"En vuelo... | t = {tiempoTotal:F2} s";
         }
 
         // ══════════════════════════════════════════════════════════════
@@ -560,7 +564,7 @@ namespace TiroParabolico
             picTejoF.BringToFront();
 
             // Obstáculo en nueva posición aleatoria; objetivo permanece estático
-            PosicionarObstaculoAleatorio();
+            PosicionarObjetivoAleatorio();
 
             lblV0x.Text = "V0x: --"; lblV0y.Text = "V0y: --";
             lblV0mag.Text = "|V0|: --"; lblV0ang.Text = "θ0: --";

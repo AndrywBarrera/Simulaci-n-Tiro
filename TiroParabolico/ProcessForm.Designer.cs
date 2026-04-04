@@ -88,7 +88,7 @@
             this.picObjetivoF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picObjetivoF.Location = new System.Drawing.Point(257, 12);
             this.picObjetivoF.Name = "picObjetivoF";
-            this.picObjetivoF.Size = new System.Drawing.Size(92, 96);
+            this.picObjetivoF.Size = new System.Drawing.Size(120, 25);
             this.picObjetivoF.TabIndex = 5;
             this.picObjetivoF.TabStop = false;
             // 
