@@ -9,3 +9,14 @@ C:\Andryw\Proyectos\CodesVBComunity\TiroParabolico\TiroParabolico\TiroParabolico
 C:\Andryw\Proyectos\CodesVBComunity\TiroParabolico\TiroParabolico\TiroParabolico\bin\Debug\TiroParabolico.pdb
 C:\Andryw\Proyectos\CodesVBComunity\TiroParabolico\TiroParabolico\TiroParabolico\obj\Debug\TiroParabolico.exe
 C:\Andryw\Proyectos\CodesVBComunity\TiroParabolico\TiroParabolico\TiroParabolico\obj\Debug\TiroParabolico.pdb
+C:\Users\Leo\Documents\GitHub\Simulaci-n-Tiro\TiroParabolico\bin\Debug\TiroParabolico.exe.config
+C:\Users\Leo\Documents\GitHub\Simulaci-n-Tiro\TiroParabolico\bin\Debug\TiroParabolico.exe
+C:\Users\Leo\Documents\GitHub\Simulaci-n-Tiro\TiroParabolico\bin\Debug\TiroParabolico.pdb
+C:\Users\Leo\Documents\GitHub\Simulaci-n-Tiro\TiroParabolico\obj\Debug\TiroParabolico.csproj.AssemblyReference.cache
+C:\Users\Leo\Documents\GitHub\Simulaci-n-Tiro\TiroParabolico\obj\Debug\TiroParabolico.BackForm.resources
+C:\Users\Leo\Documents\GitHub\Simulaci-n-Tiro\TiroParabolico\obj\Debug\TiroParabolico.ProcessForm.resources
+C:\Users\Leo\Documents\GitHub\Simulaci-n-Tiro\TiroParabolico\obj\Debug\TiroParabolico.Properties.Resources.resources
+C:\Users\Leo\Documents\GitHub\Simulaci-n-Tiro\TiroParabolico\obj\Debug\TiroParabolico.csproj.GenerateResource.cache
+C:\Users\Leo\Documents\GitHub\Simulaci-n-Tiro\TiroParabolico\obj\Debug\TiroParabolico.csproj.CoreCompileInputs.cache
+C:\Users\Leo\Documents\GitHub\Simulaci-n-Tiro\TiroParabolico\obj\Debug\TiroParabolico.exe
+C:\Users\Leo\Documents\GitHub\Simulaci-n-Tiro\TiroParabolico\obj\Debug\TiroParabolico.pdb

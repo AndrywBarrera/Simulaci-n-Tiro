@@ -1,0 +1,25 @@
+# Archivos de Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Carpetas de compilación
+[Dd]ebug/
+[Rr]elease/
+obj/
+bin/
+
+# Archivos de caché de build
+*.cache
+*.AssemblyReference.cache
+*.backup.json
+
+# Archivos de ReSharper
+.idea/
+*.DotSettings.user
+
+# Archivos de sistema
+Thumbs.db
+.DS_Store
