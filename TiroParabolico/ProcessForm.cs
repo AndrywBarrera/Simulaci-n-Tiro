@@ -321,6 +321,15 @@ namespace TiroParabolico
             // ── 5. Ignorar colisiones durante el delay inicial ────────────
             if (tiempoTotal < DELAY_COLISION) return;
 
+            // ── 5b. Límites de la escena ──────────────────────────────────
+            int margen = 10;
+            if (picTejoF.Left < -margen ||
+                picTejoF.Right > this.ClientSize.Width + margen)
+            {
+                FinDelVuelo(xt, yt, vx, vy, vmag, ang, "fuera de escena");
+                return;
+            }
+
             // ── 6. Si el tejo ya abandonó el área del último rebote ────────
             //       (anti-doble-detección), liberar la bandera enRebote
             if (enRebote)
