@@ -34,15 +34,15 @@ namespace TiroParabolico
         /// <summary>Posición del tejo en el escenario.</summary>
         public Point TejoLocation
         {
-            get { return picTejo.Location; }
-            set { picTejo.Location = value; }
+            get { return picBalon.Location; }
+            set { picBalon.Location = value; }
         }
 
         /// <summary>Tamaño del sprite del tejo.</summary>
         public Size TejoSize
         {
-            get { return picTejo.Size; }
-            set { picTejo.Size = value; }
+            get { return picBalon.Size; }
+            set { picBalon.Size = value; }
         }
 
         /// <summary>Posición del obstáculo en el escenario.</summary>

@@ -159,8 +159,8 @@ namespace TiroParabolico
             this.BringToFront();
 
             // Clonar geometría desde BackForm
-            picTejoF.Location = backForm.TejoLocation;
-            picTejoF.Size = backForm.TejoSize;
+            picBalonF.Location = backForm.TejoLocation;
+            picBalonF.Size = backForm.TejoSize;
             picSueloF.Location = backForm.SueloLocation;
             picSueloF.Size = backForm.SueloSize;
             picObjetivoF.Location = backForm.ObjetivoLocation;
@@ -168,8 +168,8 @@ namespace TiroParabolico
             picObstaculoF.Location = backForm.ObstaculoLocation;
             picObstaculoF.Size = backForm.ObstaculoSize;
 
-            initialTejoX = picTejoF.Location.X;
-            initialTejoY = picTejoF.Location.Y;
+            initialTejoX = picBalonF.Location.X;
+            initialTejoY = picBalonF.Location.Y;
 
             // Objetivo ESTÁTICO; obstáculo aleatorio cada partida
             PosicionarObjetivoAleatorio();
@@ -179,7 +179,7 @@ namespace TiroParabolico
             graphForm = new GraphForm();
             graphForm.Owner = this;
 
-            picTejoF.BringToFront();
+            picBalonF.BringToFront();
             lblEstado.Text = "Arrastra el tejo y suéltalo para lanzar";
         }
 
@@ -197,7 +197,7 @@ namespace TiroParabolico
         private void btnMostrarStats_Click(object sender, EventArgs e)
         {
             panelCalculos.Visible = true;
-            picTejoF.BringToFront();
+            picBalonF.BringToFront();
         }
 
         private void btnOcultarStats_Click(object sender, EventArgs e)
@@ -230,7 +230,7 @@ namespace TiroParabolico
                 startMouseX = e.X;
                 startMouseY = e.Y;
                 estaArrastrando = true;
-                picTejoF.BringToFront();
+                picBalonF.BringToFront();
             }
         }
 
@@ -243,14 +243,14 @@ namespace TiroParabolico
         {
             if (e.Button == MouseButtons.Left)
             {
-                picTejoF.Location = new Point(
-                    picTejoF.Location.X + e.X - startMouseX,
-                    picTejoF.Location.Y + e.Y - startMouseY
+                picBalonF.Location = new Point(
+                    picBalonF.Location.X + e.X - startMouseX,
+                    picBalonF.Location.Y + e.Y - startMouseY
                 );
                 // Distancia de estiramiento respecto a la posición de reposo
-                deltaX = initialTejoX - picTejoF.Location.X;
-                deltaY = picTejoF.Location.Y - initialTejoY;
-                picTejoF.BringToFront();
+                deltaX = initialTejoX - picBalonF.Location.X;
+                deltaY = picBalonF.Location.Y - initialTejoY;
+                picBalonF.BringToFront();
             }
         }
 
@@ -283,7 +283,7 @@ namespace TiroParabolico
                 lblV0ang.Text = $"θ0: {v0ang:F1}°";
 
                 lblEstado.Text = "En vuelo...";
-                picTejoF.BringToFront();
+                picBalonF.BringToFront();
                 // Reiniciar series para nuevo lanzamiento
                 if (graphForm != null)
                     graphForm.ReiniciarSeries();
@@ -313,11 +313,11 @@ namespace TiroParabolico
             double ang = Math.Atan2(vy, vx) * 180.0 / Math.PI;
 
             // ── 2. Mover sprite (Y invertida: física↑ = pantalla↓) ────────
-            picTejoF.Location = new Point(
+            picBalonF.Location = new Point(
                 initialTejoX + (int)xt,
                 initialTejoY - (int)yt
             );
-            picTejoF.BringToFront();
+            picBalonF.BringToFront();
 
             // ── 3. Registrar historial y actualizar labels ─────────────────
            histT.Add(tiempoTotal);
@@ -474,8 +474,8 @@ if (graphForm != null && graphForm.Visible)
 
             // ── 5b. Límites de la escena ──────────────────────────────────
             int margen = 10;
-            if (picTejoF.Left < -margen ||
-                picTejoF.Right > this.ClientSize.Width + margen)
+            if (picBalonF.Left < -margen ||
+                picBalonF.Right > this.ClientSize.Width + margen)
             {
                 FinDelVuelo(xt, yt, vx, vy, vmag, ang, "fuera de escena");
                 return;
@@ -486,8 +486,8 @@ if (graphForm != null && graphForm.Visible)
             if (enRebote)
             {
                 // Se considera "fuera" cuando deja de intersectar con suelo y objetivo
-                bool sobreObjetivo = picTejoF.Bounds.IntersectsWith(picObjetivoF.Bounds);
-                bool sobreSuelo = picTejoF.Bounds.IntersectsWith(picSueloF.Bounds);
+                bool sobreObjetivo = picBalonF.Bounds.IntersectsWith(picObjetivoF.Bounds);
+                bool sobreSuelo = picBalonF.Bounds.IntersectsWith(picSueloF.Bounds);
                 if (!sobreObjetivo && !sobreSuelo)
                     enRebote = false;
                 // Mientras sigue superpuesto, no procesar más colisiones este tick
@@ -499,7 +499,7 @@ if (graphForm != null && graphForm.Visible)
             // ══════════════════════════════════════════════════════════════
 
             // ── OBSTÁCULO: fin inmediato, sin rebote ──────────────────────
-            if (picTejoF.Bounds.IntersectsWith(picObstaculoF.Bounds))
+            if (picBalonF.Bounds.IntersectsWith(picObstaculoF.Bounds))
             {
                 FinDelVuelo(xt, yt, vx, vy, vmag, ang, "obstáculo");
                 return;
@@ -507,7 +507,7 @@ if (graphForm != null && graphForm.Visible)
 
             // ── OBJETIVO: un rebote → cambia a fase REBOTO_OBJ ───────────
             if (fase == FaseVuelo.LIBRE &&
-                picTejoF.Bounds.IntersectsWith(picObjetivoF.Bounds))
+                picBalonF.Bounds.IntersectsWith(picObjetivoF.Bounds))
             {
                 GuardarDatosRebote(1, xt, yt, vx, vy);
                 lblRebote1.Text = FormatRebote("Rebote 1 (objetivo)", rebote1X, rebote1Y, rebote1Vx, rebote1Vy);
@@ -519,7 +519,7 @@ if (graphForm != null && graphForm.Visible)
             }
 
             // ── SUELO ─────────────────────────────────────────────────────
-            if (picTejoF.Bounds.IntersectsWith(picSueloF.Bounds))
+            if (picBalonF.Bounds.IntersectsWith(picSueloF.Bounds))
             {
                 switch (fase)
                 {
@@ -721,8 +721,8 @@ if (graphForm != null && graphForm.Visible)
             LimpiarHistorial();
             LimpiarLabelsRebotes();
 
-            picTejoF.Location = new Point(initialTejoX, initialTejoY);
-            picTejoF.BringToFront();
+            picBalonF.Location = new Point(initialTejoX, initialTejoY);
+            picBalonF.BringToFront();
 
             // Obstáculo en nueva posición aleatoria; objetivo permanece estático
             PosicionarObjetivoAleatorio();

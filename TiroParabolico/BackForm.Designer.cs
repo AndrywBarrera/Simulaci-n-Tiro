@@ -38,11 +38,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BackForm));
-            this.picTejo = new System.Windows.Forms.PictureBox();
+            this.picBalon = new System.Windows.Forms.PictureBox();
             this.picObjetivo = new System.Windows.Forms.PictureBox();
             this.picObstaculo = new System.Windows.Forms.PictureBox();
             this.picSuelo = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picTejo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBalon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picObjetivo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picObstaculo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSuelo)).BeginInit();
@@ -50,15 +50,15 @@
             // 
             // picTejo
             // 
-            this.picTejo.BackColor = System.Drawing.Color.Transparent;
-            this.picTejo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picTejo.BackgroundImage")));
-            this.picTejo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picTejo.Location = new System.Drawing.Point(102, 320);
-            this.picTejo.Name = "picTejo";
-            this.picTejo.Size = new System.Drawing.Size(95, 56);
-            this.picTejo.TabIndex = 0;
-            this.picTejo.TabStop = false;
-            this.picTejo.Visible = false;
+            this.picBalon.BackColor = System.Drawing.Color.Transparent;
+            this.picBalon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picTejo.BackgroundImage")));
+            this.picBalon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picBalon.Location = new System.Drawing.Point(102, 320);
+            this.picBalon.Name = "picTejo";
+            this.picBalon.Size = new System.Drawing.Size(95, 56);
+            this.picBalon.TabIndex = 0;
+            this.picBalon.TabStop = false;
+            this.picBalon.Visible = false;
             // 
             // picObjetivo
             // 
@@ -104,14 +104,14 @@
             this.Controls.Add(this.picSuelo);
             this.Controls.Add(this.picObstaculo);
             this.Controls.Add(this.picObjetivo);
-            this.Controls.Add(this.picTejo);
+            this.Controls.Add(this.picBalon);
             this.DoubleBuffered = true;
             this.Name = "BackForm";
             this.Text = "TiroParabolico - Fondo";
             this.Load += new System.EventHandler(this.BackForm_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BackForm_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BackForm_MouseMove);
-            ((System.ComponentModel.ISupportInitialize)(this.picTejo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBalon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picObjetivo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picObstaculo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSuelo)).EndInit();
@@ -126,7 +126,7 @@
         // No renombrar sin actualizar también InitializeComponent().
 
         /// <summary>Sprite visual e hitbox del tejo (objeto lanzado).</summary>
-        private System.Windows.Forms.PictureBox picTejo;
+        private System.Windows.Forms.PictureBox picBalon;
 
         /// <summary>Sprite visual del objetivo/blanco a alcanzar.</summary>
         private System.Windows.Forms.PictureBox picObjetivo;

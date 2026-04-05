@@ -23,7 +23,7 @@
             this.picSueloF = new System.Windows.Forms.PictureBox();
             this.picObstaculoF = new System.Windows.Forms.PictureBox();
             this.picObjetivoF = new System.Windows.Forms.PictureBox();
-            this.picTejoF = new System.Windows.Forms.PictureBox();
+            this.picBalonF = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.panelCalculos = new System.Windows.Forms.Panel();
@@ -56,7 +56,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picSueloF)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picObstaculoF)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picObjetivoF)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTejoF)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBalonF)).BeginInit();
             this.panelCalculos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,17 +94,17 @@
             // 
             // picTejoF
             // 
-            this.picTejoF.BackColor = System.Drawing.Color.Transparent;
-            this.picTejoF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picTejoF.BackgroundImage")));
-            this.picTejoF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picTejoF.Location = new System.Drawing.Point(147, 13);
-            this.picTejoF.Name = "picTejoF";
-            this.picTejoF.Size = new System.Drawing.Size(114, 61);
-            this.picTejoF.TabIndex = 30;
-            this.picTejoF.TabStop = false;
-            this.picTejoF.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picTejoF_MouseDown);
-            this.picTejoF.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picTejoF_MouseMove_1);
-            this.picTejoF.MouseUp += new System.Windows.Forms.MouseEventHandler(this.picTejoF_MouseUp);
+            this.picBalonF.BackColor = System.Drawing.Color.Transparent;
+            this.picBalonF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picTejoF.BackgroundImage")));
+            this.picBalonF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picBalonF.Location = new System.Drawing.Point(147, 13);
+            this.picBalonF.Name = "picTejoF";
+            this.picBalonF.Size = new System.Drawing.Size(114, 61);
+            this.picBalonF.TabIndex = 30;
+            this.picBalonF.TabStop = false;
+            this.picBalonF.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picTejoF_MouseDown);
+            this.picBalonF.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picTejoF_MouseMove_1);
+            this.picBalonF.MouseUp += new System.Windows.Forms.MouseEventHandler(this.picTejoF_MouseUp);
             // 
             // timer1
             // 
@@ -469,7 +469,7 @@
             this.Controls.Add(this.picSueloF);
             this.Controls.Add(this.picObstaculoF);
             this.Controls.Add(this.picObjetivoF);
-            this.Controls.Add(this.picTejoF);
+            this.Controls.Add(this.picBalonF);
             this.DoubleBuffered = true;
             this.Name = "ProcessForm";
             this.Text = "Tiro Parabólico — UPTC Sogamoso";
@@ -479,7 +479,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picSueloF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picObstaculoF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picObjetivoF)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTejoF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBalonF)).EndInit();
             this.panelCalculos.ResumeLayout(false);
             this.panelCalculos.PerformLayout();
             this.ResumeLayout(false);
@@ -496,7 +496,7 @@
         private System.Windows.Forms.PictureBox picSueloF;
         private System.Windows.Forms.PictureBox picObstaculoF;
         private System.Windows.Forms.PictureBox picObjetivoF;
-        private System.Windows.Forms.PictureBox picTejoF;
+        private System.Windows.Forms.PictureBox picBalonF;
 
         // — Timer de animación —
         private System.Windows.Forms.Timer timer1;

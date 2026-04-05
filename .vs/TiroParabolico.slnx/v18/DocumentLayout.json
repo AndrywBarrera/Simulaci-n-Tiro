@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\tiroparabolico\\processform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\processform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\tiroparabolico\\backform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\backform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\tiroparabolico\\processform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\processform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,20 +35,12 @@
       "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\graphform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\tiroparabolico\\processform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\processform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|c:\\users\\leo\\documents\\github\\simulaci-n-tiro\\tiroparabolico\\backform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\backform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\tiroparabolico\\graphform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\graphform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\tiroparabolico\\backform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\backform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,20 +58,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "BackForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\TiroParabolico\\BackForm.Designer.cs",
               "RelativeDocumentMoniker": "TiroParabolico\\BackForm.Designer.cs",
               "ToolTip": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\TiroParabolico\\BackForm.Designer.cs",
               "RelativeToolTip": "TiroParabolico\\BackForm.Designer.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAkwIsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwIAAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-31T19:11:42.669Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "BackForm.cs",
               "DocumentMoniker": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\TiroParabolico\\BackForm.cs",
               "RelativeDocumentMoniker": "TiroParabolico\\BackForm.cs",
@@ -84,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "BackForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\TiroParabolico\\BackForm.cs",
               "RelativeDocumentMoniker": "TiroParabolico\\BackForm.cs",
@@ -96,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ProcessForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\TiroParabolico\\ProcessForm.cs",
               "RelativeDocumentMoniker": "TiroParabolico\\ProcessForm.cs",
@@ -108,20 +108,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ProcessForm.cs",
               "DocumentMoniker": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\TiroParabolico\\ProcessForm.cs",
               "RelativeDocumentMoniker": "TiroParabolico\\ProcessForm.cs",
               "ToolTip": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\TiroParabolico\\ProcessForm.cs",
               "RelativeToolTip": "TiroParabolico\\ProcessForm.cs",
-              "ViewState": "AgIAANgAAAAAAAAAAAAAANgAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAALEAAAAAAAAAAADwv9gAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-30T20:38:23.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "GraphForm.cs",
               "DocumentMoniker": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\TiroParabolico\\GraphForm.cs",
               "RelativeDocumentMoniker": "TiroParabolico\\GraphForm.cs",
@@ -134,20 +134,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "ProcessForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\TiroParabolico\\ProcessForm.Designer.cs",
               "RelativeDocumentMoniker": "TiroParabolico\\ProcessForm.Designer.cs",
               "ToolTip": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\TiroParabolico\\ProcessForm.Designer.cs",
               "RelativeToolTip": "TiroParabolico\\ProcessForm.Designer.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFoAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAN0BAAAAAAAAAAAowPIBAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-30T20:38:21.316Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "GraphForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\TiroParabolico\\GraphForm.cs",
               "RelativeDocumentMoniker": "TiroParabolico\\GraphForm.cs",
@@ -159,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "BackForm.resx",
               "DocumentMoniker": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\TiroParabolico\\BackForm.resx",
               "RelativeDocumentMoniker": "TiroParabolico\\BackForm.resx",
@@ -171,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "GraphForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\TiroParabolico\\GraphForm.Designer.cs",
               "RelativeDocumentMoniker": "TiroParabolico\\GraphForm.Designer.cs",
