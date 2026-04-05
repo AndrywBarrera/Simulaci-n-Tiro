@@ -15,24 +15,23 @@ namespace TiroParabolico
     /// </summary>
     public partial class GraphForm : Form
     {
-        // ──────────────────────────────────────────────
-        //  Constructor
-        // ──────────────────────────────────────────────
+        // ── Bandera para inicialización de series ─────────────
+        private bool _seriesInicializadas = false;
+
         public GraphForm()
         {
             InitializeComponent();
-
-            // El botón de cerrar solo oculta, no destruye el formulario
             btnCerrar.Click += (s, e) => this.Hide();
         }
 
-        // ──────────────────────────────────────────────
+        // ──────────────────────────────────────────────────────
         //  API pública — llamada desde ProcessForm
-        // ──────────────────────────────────────────────
+        // ──────────────────────────────────────────────────────
 
         /// <summary>
-        /// Recibe los historiales de la simulación y rellena las 7 gráficas.
-        /// Incluye marcadores especiales para los puntos de rebote.
+        /// Recibe los historiales y actualiza las 7 gráficas.
+        /// En tiempo real solo agrega el último punto (más eficiente).
+        /// Al finalizar o al reiniciar recarga todo.
         /// </summary>
         public void CargarDatos(
             List<double> t,
@@ -42,21 +41,86 @@ namespace TiroParabolico
             List<double> vy,
             List<double> vmag,
             List<double> ang,
-            List<int> indicesRebote)   // índices en la lista donde ocurrieron rebotes
+            List<int> indicesRebote,
+            bool forzarRecarga = false)
         {
-            // Limpiar todas las gráficas antes de cargar nuevos datos
+            if (t == null || t.Count == 0) return;
+
+            // Si no están inicializadas o se fuerza recarga, reiniciar todo
+            if (!_seriesInicializadas || forzarRecarga)
+            {
+                InicializarSeries();
+                CargarTodosLosPuntos(t, x, y, vx, vy, vmag, ang, indicesRebote);
+                _seriesInicializadas = true;
+                return;
+            }
+
+            // ── Modo incremental: solo agregar el último punto ─
+            int idx = t.Count - 1;
+            if (idx < 0) return;
+
+            AgregarPunto(chartYT, "y(t)", t[idx], y[idx]);
+            AgregarPunto(chartXT, "x(t)", t[idx], x[idx]);
+            AgregarPunto(chartYX, "y(x)", x[idx], y[idx]);
+            AgregarPunto(chartVxT, "Vx(t)", t[idx], vx[idx]);
+            AgregarPunto(chartVyT, "Vy(t)", t[idx], vy[idx]);
+            AgregarPunto(chartVmagT, "|V|(t)", t[idx], vmag[idx]);
+            AgregarPunto(chartAngT, "θ(t)", t[idx], ang[idx]);
+
+            // Marcar rebote si el último índice registrado es este punto
+            if (indicesRebote != null && indicesRebote.Count > 0 &&
+                indicesRebote[indicesRebote.Count - 1] == idx)
+            {
+                AgregarMarcadorRebote(chartYT, t[idx], y[idx]);
+                AgregarMarcadorRebote(chartXT, t[idx], x[idx]);
+                AgregarMarcadorRebote(chartYX, x[idx], y[idx]);
+                AgregarMarcadorRebote(chartVxT, t[idx], vx[idx]);
+                AgregarMarcadorRebote(chartVyT, t[idx], vy[idx]);
+                AgregarMarcadorRebote(chartVmagT, t[idx], vmag[idx]);
+                AgregarMarcadorRebote(chartAngT, t[idx], ang[idx]);
+            }
+        }
+
+        /// <summary>Llama esto al reiniciar para que las series se recreen.</summary>
+        public void ReiniciarSeries()
+        {
+            _seriesInicializadas = false;
+            LimpiarTodos();
+        }
+
+        // ──────────────────────────────────────────────────────
+        //  Helpers privados
+        // ──────────────────────────────────────────────────────
+
+        private void InicializarSeries()
+        {
             LimpiarTodos();
 
-            // ── Cargar cada gráfica ───────────────────
-            CargarSerie(chartYT, t, y, "y(t)", "Tiempo (s)", "Posición Y (m)", Color.DeepSkyBlue);
-            CargarSerie(chartXT, t, x, "x(t)", "Tiempo (s)", "Posición X (m)", Color.LimeGreen);
-            CargarSerie(chartYX, x, y, "y(x)", "Posición X (m)", "Posición Y (m)", Color.Gold);
-            CargarSerie(chartVxT, t, vx, "Vx(t)", "Tiempo (s)", "Vx (m/s)", Color.Coral);
-            CargarSerie(chartVyT, t, vy, "Vy(t)", "Tiempo (s)", "Vy (m/s)", Color.MediumPurple);
-            CargarSerie(chartVmagT, t, vmag, "|V|(t)", "Tiempo (s)", "|V| (m/s)", Color.Orange);
-            CargarSerie(chartAngT, t, ang, "θ(t)", "Tiempo (s)", "Ángulo (°)", Color.HotPink);
+            ConfigurarSerie(chartYT, "y(t)", "Tiempo (s)", "Posición Y (m)", Color.DeepSkyBlue);
+            ConfigurarSerie(chartXT, "x(t)", "Tiempo (s)", "Posición X (m)", Color.LimeGreen);
+            ConfigurarSerie(chartYX, "y(x)", "Posición X (m)", "Posición Y (m)", Color.Gold);
+            ConfigurarSerie(chartVxT, "Vx(t)", "Tiempo (s)", "Vx (m/s)", Color.Coral);
+            ConfigurarSerie(chartVyT, "Vy(t)", "Tiempo (s)", "Vy (m/s)", Color.MediumPurple);
+            ConfigurarSerie(chartVmagT, "|V|(t)", "Tiempo (s)", "|V| (m/s)", Color.Orange);
+            ConfigurarSerie(chartAngT, "θ(t)", "Tiempo (s)", "Ángulo (°)", Color.HotPink);
+        }
 
-            // ── Marcar puntos de rebote en cada gráfica ───
+        private void CargarTodosLosPuntos(
+            List<double> t, List<double> x, List<double> y,
+            List<double> vx, List<double> vy, List<double> vmag,
+            List<double> ang, List<int> indicesRebote)
+        {
+            for (int i = 0; i < t.Count; i++)
+            {
+                AgregarPunto(chartYT, "y(t)", t[i], y[i]);
+                AgregarPunto(chartXT, "x(t)", t[i], x[i]);
+                AgregarPunto(chartYX, "y(x)", x[i], y[i]);
+                AgregarPunto(chartVxT, "Vx(t)", t[i], vx[i]);
+                AgregarPunto(chartVyT, "Vy(t)", t[i], vy[i]);
+                AgregarPunto(chartVmagT, "|V|(t)", t[i], vmag[i]);
+                AgregarPunto(chartAngT, "θ(t)", t[i], ang[i]);
+            }
+
             if (indicesRebote != null)
             {
                 foreach (int idx in indicesRebote)
@@ -75,18 +139,11 @@ namespace TiroParabolico
             }
         }
 
-        // ──────────────────────────────────────────────
-        //  Helpers privados
-        // ──────────────────────────────────────────────
-
         /// <summary>
-        /// Carga una serie de datos en un Chart, configurando ejes,
-        /// título, color de línea y estilo visual.
+        /// Configura los títulos, colores y ejes de un Chart y crea su serie principal.
         /// </summary>
-        private void CargarSerie(
+        private void ConfigurarSerie(
             Chart chart,
-            List<double> ejeX,
-            List<double> ejeY,
             string nombreSerie,
             string tituloX,
             string tituloY,
@@ -95,12 +152,12 @@ namespace TiroParabolico
             chart.Series.Clear();
             chart.Titles.Clear();
 
-            // ── Título del chart ──────────────────────
+            // Título
             var titulo = chart.Titles.Add(nombreSerie);
             titulo.Font = new Font("Segoe UI", 8f, FontStyle.Bold);
             titulo.ForeColor = Color.White;
 
-            // ── Configurar ejes ───────────────────────
+            // Ejes
             var area = chart.ChartAreas[0];
             area.AxisX.Title = tituloX;
             area.AxisY.Title = tituloY;
@@ -118,27 +175,29 @@ namespace TiroParabolico
             area.AxisY.MajorGrid.LineColor = Color.FromArgb(50, 50, 50);
             area.BackColor = Color.FromArgb(15, 15, 30);
 
-            // ── Serie principal ───────────────────────
+            // Serie
             var serie = new Series(nombreSerie);
             serie.ChartType = SeriesChartType.Line;
             serie.Color = colorLinea;
             serie.BorderWidth = 2;
             serie.MarkerStyle = MarkerStyle.None;
-
-            for (int i = 0; i < ejeX.Count && i < ejeY.Count; i++)
-                serie.Points.AddXY(ejeX[i], ejeY[i]);
-
             chart.Series.Add(serie);
         }
 
+        /// <summary>Agrega un punto a la serie principal del chart.</summary>
+        private void AgregarPunto(Chart chart, string nombreSerie, double px, double py)
+        {
+            if (chart.Series.IsUniqueName(nombreSerie)) return; // serie no existe aún
+            chart.Series[nombreSerie].Points.AddXY(px, py);
+        }
+
         /// <summary>
-        /// Agrega un punto marcador (estrella roja) en la posición del rebote
-        /// sobre el chart indicado, como una serie separada de un solo punto.
+        /// Agrega un marcador de rebote (estrella roja) como serie de un solo punto.
         /// </summary>
         private void AgregarMarcadorRebote(Chart chart, double px, double py)
         {
-            string nombreMarcador = $"Rebote_{chart.Series.Count}";
-            var marcador = new Series(nombreMarcador);
+            string nombre = $"Rebote_{chart.Series.Count}";
+            var marcador = new Series(nombre);
             marcador.ChartType = SeriesChartType.Point;
             marcador.Color = Color.OrangeRed;
             marcador.MarkerStyle = MarkerStyle.Star4;
@@ -148,9 +207,6 @@ namespace TiroParabolico
             chart.Series.Add(marcador);
         }
 
-        /// <summary>
-        /// Limpia series y títulos de todos los charts.
-        /// </summary>
         private void LimpiarTodos()
         {
             Chart[] todos = { chartYT, chartXT, chartYX, chartVxT, chartVyT, chartVmagT, chartAngT };
@@ -161,13 +217,8 @@ namespace TiroParabolico
             }
         }
 
-        // ──────────────────────────────────────────────
-        //  Eventos del formulario
-        // ──────────────────────────────────────────────
-
         private void GraphForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // Evitar que se destruya; solo ocultar
             e.Cancel = true;
             this.Hide();
         }

@@ -234,6 +234,11 @@ namespace TiroParabolico
             }
         }
 
+        private void panelCalculos_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void picTejoF_MouseMove_1(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -279,7 +284,17 @@ namespace TiroParabolico
 
                 lblEstado.Text = "En vuelo...";
                 picTejoF.BringToFront();
+                // Reiniciar series para nuevo lanzamiento
+                if (graphForm != null)
+                    graphForm.ReiniciarSeries();
                 timer1.Enabled = true;
+
+                // Mostrar gráficas automáticamente al lanzar
+                if (graphForm != null)
+                {
+                    graphForm.Show();
+                    graphForm.BringToFront();
+                }
             }
         }
 
@@ -305,14 +320,150 @@ namespace TiroParabolico
             picTejoF.BringToFront();
 
             // ── 3. Registrar historial y actualizar labels ─────────────────
-            histT.Add(tiempoTotal);
-            histX.Add(xt * SCALE);
-            histY.Add(yt * SCALE);
-            histVx.Add(vx * SCALE);
-            histVy.Add(vy * SCALE);
-            histVmag.Add(vmag * SCALE);
-            histAng.Add(ang);
-            ActualizarCalculos(vx, vy, vmag, ang);
+           histT.Add(tiempoTotal);
+histX.Add(xt * SCALE);
+histY.Add(yt * SCALE);
+histVx.Add(vx * SCALE);
+histVy.Add(vy * SCALE);
+histVmag.Add(vmag * SCALE);
+histAng.Add(ang);
+ActualizarCalculos(vx, vy, vmag, ang);
+
+// ── Actualizar gráficas en tiempo real ──────────────────
+if (graphForm != null && graphForm.Visible)
+{
+    graphForm.CargarDatos(
+        histT, histX, histY,
+        histVx, histVy, histVmag, histAng,
+        histIndicesRebote
+    );
+}
+           histT.Add(tiempoTotal);
+histX.Add(xt * SCALE);
+histY.Add(yt * SCALE);
+histVx.Add(vx * SCALE);
+histVy.Add(vy * SCALE);
+histVmag.Add(vmag * SCALE);
+histAng.Add(ang);
+ActualizarCalculos(vx, vy, vmag, ang);
+
+// ── Actualizar gráficas en tiempo real ──────────────────
+if (graphForm != null && graphForm.Visible)
+{
+    graphForm.CargarDatos(
+        histT, histX, histY,
+        histVx, histVy, histVmag, histAng,
+        histIndicesRebote
+    );
+}
+           histT.Add(tiempoTotal);
+histX.Add(xt * SCALE);
+histY.Add(yt * SCALE);
+histVx.Add(vx * SCALE);
+histVy.Add(vy * SCALE);
+histVmag.Add(vmag * SCALE);
+histAng.Add(ang);
+ActualizarCalculos(vx, vy, vmag, ang);
+
+// ── Actualizar gráficas en tiempo real ──────────────────
+if (graphForm != null && graphForm.Visible)
+{
+    graphForm.CargarDatos(
+        histT, histX, histY,
+        histVx, histVy, histVmag, histAng,
+        histIndicesRebote
+    );
+}
+           histT.Add(tiempoTotal);
+histX.Add(xt * SCALE);
+histY.Add(yt * SCALE);
+histVx.Add(vx * SCALE);
+histVy.Add(vy * SCALE);
+histVmag.Add(vmag * SCALE);
+histAng.Add(ang);
+ActualizarCalculos(vx, vy, vmag, ang);
+
+// ── Actualizar gráficas en tiempo real ──────────────────
+if (graphForm != null && graphForm.Visible)
+{
+    graphForm.CargarDatos(
+        histT, histX, histY,
+        histVx, histVy, histVmag, histAng,
+        histIndicesRebote
+    );
+}
+           histT.Add(tiempoTotal);
+histX.Add(xt * SCALE);
+histY.Add(yt * SCALE);
+histVx.Add(vx * SCALE);
+histVy.Add(vy * SCALE);
+histVmag.Add(vmag * SCALE);
+histAng.Add(ang);
+ActualizarCalculos(vx, vy, vmag, ang);
+
+// ── Actualizar gráficas en tiempo real ──────────────────
+if (graphForm != null && graphForm.Visible)
+{
+    graphForm.CargarDatos(
+        histT, histX, histY,
+        histVx, histVy, histVmag, histAng,
+        histIndicesRebote
+    );
+}
+        histT.Add(tiempoTotal);
+        histX.Add(xt * SCALE);
+        histY.Add(yt * SCALE);
+        histVx.Add(vx * SCALE);
+        histVy.Add(vy * SCALE);
+        histVmag.Add(vmag * SCALE);
+        histAng.Add(ang);
+        ActualizarCalculos(vx, vy, vmag, ang);
+
+        // ── Actualizar gráficas en tiempo real ──────────────────
+        if (graphForm != null && graphForm.Visible)
+        {
+            graphForm.CargarDatos(
+                histT, histX, histY,
+                histVx, histVy, histVmag, histAng,
+                histIndicesRebote
+            );
+        }
+                   histT.Add(tiempoTotal);
+        histX.Add(xt * SCALE);
+        histY.Add(yt * SCALE);
+        histVx.Add(vx * SCALE);
+        histVy.Add(vy * SCALE);
+        histVmag.Add(vmag * SCALE);
+        histAng.Add(ang);
+        ActualizarCalculos(vx, vy, vmag, ang);
+
+        // ── Actualizar gráficas en tiempo real ──────────────────
+        if (graphForm != null && graphForm.Visible)
+        {
+            graphForm.CargarDatos(
+                histT, histX, histY,
+                histVx, histVy, histVmag, histAng,
+                histIndicesRebote
+            );
+        }
+                    histT.Add(tiempoTotal);
+                    histX.Add(xt * SCALE);
+                    histY.Add(yt * SCALE);
+                    histVx.Add(vx * SCALE);
+                    histVy.Add(vy * SCALE);
+                    histVmag.Add(vmag * SCALE);
+                    histAng.Add(ang);
+                    ActualizarCalculos(vx, vy, vmag, ang);
+
+            // ── Actualizar gráficas en tiempo real ──────────────────
+            if (graphForm != null && graphForm.Visible)
+            {
+                graphForm.CargarDatos(
+                    histT, histX, histY,
+                    histVx, histVy, histVmag, histAng,
+                    histIndicesRebote
+                );
+            }
 
             // ── 4. Avanzar tiempo ─────────────────────────────────────────
             t += 0.1;
@@ -482,8 +633,9 @@ namespace TiroParabolico
             graphForm.CargarDatos(
                 histT, histX, histY,
                 histVx, histVy, histVmag, histAng,
-                histIndicesRebote
-            );
+                histIndicesRebote,
+                forzarRecarga: true   // recarga completa al terminar
+);
             graphForm.Show();
             graphForm.BringToFront();
         }
@@ -587,6 +739,10 @@ namespace TiroParabolico
             if (graphForm != null && graphForm.Visible) graphForm.Hide();
 
             lblEstado.Text = "Arrastra el tejo y suéltalo para lanzar";
+
+            // Reiniciar series del gráfico
+            if (graphForm != null)
+                graphForm.ReiniciarSeries();
         }
 
         private void picSueloF_Click(object sender, EventArgs e) { }

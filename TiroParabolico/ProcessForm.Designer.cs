@@ -86,9 +86,9 @@
             this.picObjetivoF.BackColor = System.Drawing.Color.Transparent;
             this.picObjetivoF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picObjetivoF.BackgroundImage")));
             this.picObjetivoF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picObjetivoF.Location = new System.Drawing.Point(257, 12);
+            this.picObjetivoF.Location = new System.Drawing.Point(46, 126);
             this.picObjetivoF.Name = "picObjetivoF";
-            this.picObjetivoF.Size = new System.Drawing.Size(120, 25);
+            this.picObjetivoF.Size = new System.Drawing.Size(184, 55);
             this.picObjetivoF.TabIndex = 5;
             this.picObjetivoF.TabStop = false;
             // 
@@ -156,6 +156,7 @@
             this.panelCalculos.Size = new System.Drawing.Size(180, 375);
             this.panelCalculos.TabIndex = 20;
             this.panelCalculos.Visible = false;
+            this.panelCalculos.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCalculos_Paint);
             // 
             // lblTituloV0
             // 

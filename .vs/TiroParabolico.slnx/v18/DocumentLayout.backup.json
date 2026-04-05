@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\tiroparabolico\\processform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\processform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\tiroparabolico\\processform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\processform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\tiroparabolico\\processform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\processform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\tiroparabolico\\processform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|solutionrelative:tiroparabolico\\processform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A42FFBE1-C5FC-476B-9BF2-77B7F04BCA39}|TiroParabolico\\TiroParabolico.csproj|c:\\users\\leo\\documents\\github\\simulaci-n-tiro\\tiroparabolico\\backform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -105,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ProcessForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\TiroParabolico\\ProcessForm.cs",
               "RelativeDocumentMoniker": "TiroParabolico\\ProcessForm.cs",
@@ -117,13 +117,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProcessForm.cs",
               "DocumentMoniker": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\TiroParabolico\\ProcessForm.cs",
               "RelativeDocumentMoniker": "TiroParabolico\\ProcessForm.cs",
               "ToolTip": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\TiroParabolico\\ProcessForm.cs",
               "RelativeToolTip": "TiroParabolico\\ProcessForm.cs",
-              "ViewState": "AgIAAOEBAAAAAAAAAAAqwP8BAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAALgBAAAAAAAAAAAAwMoBAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-30T20:38:23.278Z",
               "EditorCaption": ""
@@ -142,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProcessForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Leo\\Documents\\GitHub\\Simulaci-n-Tiro\\TiroParabolico\\ProcessForm.Designer.cs",
               "RelativeDocumentMoniker": "TiroParabolico\\ProcessForm.Designer.cs",
