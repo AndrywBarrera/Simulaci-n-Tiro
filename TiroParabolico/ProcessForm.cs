@@ -214,7 +214,7 @@ namespace TiroParabolico
             Random rnd = new Random();
             // Objetivo horizontal: X entre 300 y 550, Y entre 150 y 350
             picObjetivoF.Location = new Point(
-                rnd.Next(400, 651),
+                rnd.Next(300, 551),
                 rnd.Next(150, 351)
             );
         }

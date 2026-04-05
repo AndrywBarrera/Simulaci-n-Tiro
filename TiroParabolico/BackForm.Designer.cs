@@ -53,9 +53,9 @@
             this.picTejo.BackColor = System.Drawing.Color.Transparent;
             this.picTejo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picTejo.BackgroundImage")));
             this.picTejo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picTejo.Location = new System.Drawing.Point(102, 336);
+            this.picTejo.Location = new System.Drawing.Point(102, 320);
             this.picTejo.Name = "picTejo";
-            this.picTejo.Size = new System.Drawing.Size(43, 40);
+            this.picTejo.Size = new System.Drawing.Size(95, 56);
             this.picTejo.TabIndex = 0;
             this.picTejo.TabStop = false;
             this.picTejo.Visible = false;
@@ -65,9 +65,9 @@
             this.picObjetivo.BackColor = System.Drawing.Color.Transparent;
             this.picObjetivo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picObjetivo.BackgroundImage")));
             this.picObjetivo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picObjetivo.Location = new System.Drawing.Point(683, 336);
+            this.picObjetivo.Location = new System.Drawing.Point(622, 336);
             this.picObjetivo.Name = "picObjetivo";
-            this.picObjetivo.Size = new System.Drawing.Size(76, 73);
+            this.picObjetivo.Size = new System.Drawing.Size(137, 63);
             this.picObjetivo.TabIndex = 1;
             this.picObjetivo.TabStop = false;
             this.picObjetivo.Visible = false;
@@ -77,7 +77,7 @@
             this.picObstaculo.BackColor = System.Drawing.Color.Transparent;
             this.picObstaculo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picObstaculo.BackgroundImage")));
             this.picObstaculo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picObstaculo.Location = new System.Drawing.Point(340, 250);
+            this.picObstaculo.Location = new System.Drawing.Point(285, 250);
             this.picObstaculo.Name = "picObstaculo";
             this.picObstaculo.Size = new System.Drawing.Size(87, 159);
             this.picObstaculo.TabIndex = 2;

@@ -77,7 +77,7 @@
             this.picObstaculoF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picObstaculoF.Location = new System.Drawing.Point(35, 12);
             this.picObstaculoF.Name = "picObstaculoF";
-            this.picObstaculoF.Size = new System.Drawing.Size(106, 96);
+            this.picObstaculoF.Size = new System.Drawing.Size(106, 148);
             this.picObstaculoF.TabIndex = 6;
             this.picObstaculoF.TabStop = false;
             // 
@@ -86,7 +86,7 @@
             this.picObjetivoF.BackColor = System.Drawing.Color.Transparent;
             this.picObjetivoF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picObjetivoF.BackgroundImage")));
             this.picObjetivoF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picObjetivoF.Location = new System.Drawing.Point(46, 126);
+            this.picObjetivoF.Location = new System.Drawing.Point(35, 173);
             this.picObjetivoF.Name = "picObjetivoF";
             this.picObjetivoF.Size = new System.Drawing.Size(184, 55);
             this.picObjetivoF.TabIndex = 5;
@@ -99,7 +99,7 @@
             this.picTejoF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picTejoF.Location = new System.Drawing.Point(147, 13);
             this.picTejoF.Name = "picTejoF";
-            this.picTejoF.Size = new System.Drawing.Size(104, 96);
+            this.picTejoF.Size = new System.Drawing.Size(114, 61);
             this.picTejoF.TabIndex = 30;
             this.picTejoF.TabStop = false;
             this.picTejoF.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picTejoF_MouseDown);
